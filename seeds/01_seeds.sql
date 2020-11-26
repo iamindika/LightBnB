@@ -1,15 +1,10 @@
-DELETE FROM property_reviews;
-DELETE FROM reservations;
-DELETE FROM properties;
-DELETE FROM users;
-
 INSERT INTO users (name, email, password)
 VALUES ('Indika Kolamba Tantrege', 'ikt2@gmail.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.'),
 ('Jenna McGill', 'jm89@hotmail.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.'),
 ('Ricky Travis', 'rickt489@outlook.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.');
 
 INSERT INTO properties (owner_id, title, description, thumbnail_photo_url, cover_photo_url, cost_per_night, parking_spaces,
-number_of_bathrooms, number_of_bedrooms, country, street, city, province, postal_code, active)
+number_of_bathrooms, number_of_bedrooms, country, street, city, province, post_code, active)
 VALUES (1, 'Creepy Corner', 'description', 'https://images.pexels/photos/2080018/pexels-photo-2080018.jpeg?size=thumbnail', 'https://images.pexels/photos/2080018/pexels-photo-2080018.jpeg?size=400%20400', 100, 30, 1, 1, 'Canada', 'Dundas Street', 'Toronto', 'Ontario', 'M5B 2G9', FALSE),
 (1, 'Mole Hill', 'description', 'https://images.pexels/photos/2097018/pexels-photo-2097018.jpeg?size=thumbnail', 'https://images.pexels/photos/2097018/pexels-photo-2097018.jpeg?size=400%20400', 250, 10, 2, 3, 'Canada', 'Beverley Hill Drive', 'North York', 'Ontario', 'M3L 1A1', TRUE), 
 (2, 'Red Door', 'description', 'https://images.pexels/photos/1090018/pexels-photo-1090018.jpeg?size=thumbnail', 'https://images.pexels/photos/1090018/pexels-photo-1090018.jpeg?size=400%20400', 180, 5, 2, 1, 'Canada', 'Warden Avenue', 'Scarborough', 'Ontario', 'M1R 1P4', TRUE),
