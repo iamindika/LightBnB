@@ -8,6 +8,11 @@ $(() => {
       </div>
 
       <div class="search-property-form__field-wrapper">
+        <label for="search-property-form__owner-id">Owner ID</label>
+        <input type="number" name="owner_id" placeholder="Owner ID" id="search-property-form__owner-id">
+      </div>
+
+      <div class="search-property-form__field-wrapper">
         <label for="search-property-form__minimum-price-per-night">Minimum Cost</label>
         <input type="number" name="minimum_price_per_night" placeholder="Minimum Cost" id="search-property-form__minimum-price-per-night">
         <label for="search-property-form__maximum-price-per-night">Maximum Cost</label>
